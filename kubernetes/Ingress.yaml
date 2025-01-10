@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "junoon.trainwithshubham.com"
+  - host: "junoon.trainwithakas.com"
     http:
       paths:
       - path: /
