@@ -16,7 +16,7 @@ spec:
         app: bankapp-deploy
     spec:
       containers:
-      - image: akasdevops/bankapp:v8
+      - image: apatranobis59/bankapp:latest
         name: bankapp
         ports:
         - containerPort: 8080
