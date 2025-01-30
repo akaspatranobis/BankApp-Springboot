@@ -35,7 +35,7 @@ sudo vim /etc/nginx/sites-available/bankapp
 ```bash
 server {
     listen 80;
-    server_name junoon.trainwithakas.com; # Replace with your domain
+    server_name devops.trainwithakas.com; # Replace with your domain
 
     location / {
         proxy_pass http://localhost:8080; # Replace port with your application port
@@ -67,7 +67,7 @@ Note: If the test is successful, you should see: nginx: configuration file /etc/
 sudo systemctl restart nginx 
 ```
 #
-- Open your web browser and navigate to http://junoon.trainwithakas.com. Replace junoon.trainwithakas.com with your actual domain. You should now be able to access an application through Nginx.
+- Open your web browser and navigate to http://devops.trainwithakas.com. Replace devops.trainwithakas.com with your actual domain. You should now be able to access an application through Nginx.
 #
 - Now, apply SSL certificate to the Domain.
 ```bash
@@ -77,5 +77,5 @@ sudo apt install python3-certbot-nginx
 certbot --version
 ```
 ```bash
-certbot --nginx -d junoon.trainwithakas.com
+certbot --nginx -d devops.trainwithakas.com
 ```
